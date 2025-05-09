@@ -1,43 +1,135 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="space-y-10">
-      <header className="text-center">
-        <h1 className="text-4xl font-bold text-[#5c4033]">
-          Chris's Piano Care
-        </h1>
-        <p className="mt-2 text-lg">
-          Tuning pianos with precision and a personal touch.
-        </p>
+    <div className="relative w-full scroll-smooth">
+      {/* Background Image for Landing Section */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/piano-tuning-grand.jpg"
+          alt="Warm piano in a cozy room"
+          fill
+          className="object-cover brightness-50"
+          priority
+        />
+      </div>
+
+      {/* Fixed Header with Links */}
+      <header className="fixed top-0 left-0 w-full bg-[#5c4033]/90 text-white z-20 shadow-md">
+        <nav className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+          <h1 className="text-xl font-semibold">Chris's Piano Care</h1>
+          <div className="space-x-4 text-sm sm:text-base">
+            <a href="#about" className="hover:underline">
+              About
+            </a>
+            <a href="#pricing" className="hover:underline">
+              Pricing
+            </a>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
+          </div>
+        </nav>
       </header>
 
-      <Image
-        src="/images/piano-tuning-grand.jpg"
-        alt="Warm piano in a cozy room"
-        width={800}
-        height={500}
-        className="rounded-xl shadow-md mx-auto"
-      />
-
-      <section className="text-center">
-        <h2 className="text-2xl font-semibold">Serving Your Neighborhood</h2>
-        <p className="mt-2 text-gray-600">
-          I tune pianos for families and individuals in the [Your Town or
-          County] area. Whether it's been 6 months or 6 years, I can help bring
-          your piano back in tune.
+      {/* Landing Section */}
+      <section className="h-screen flex flex-col justify-center items-center text-center text-white px-4">
+        <h2 className="text-4xl font-bold drop-shadow-md">
+          Tuning Pianos with Precision and Heart
+        </h2>
+        <p className="mt-4 text-lg max-w-xl drop-shadow">
+          Serving homes in the Provo area with personalized piano care and
+          tuning.
         </p>
-      </section>
-
-      <section className="text-center">
-        <Link
-          href="/contact"
-          className="inline-block bg-[#5c4033] text-white px-6 py-3 rounded-md hover:bg-[#402c22] transition"
+        <a
+          href="#contact"
+          className="mt-6 inline-block bg-white text-[#5c4033] font-semibold px-6 py-3 rounded-md hover:bg-gray-100 transition"
         >
           Schedule a Tuning
-        </Link>
+        </a>
       </section>
+
+      {/* About Section */}
+      <section id="about" className="bg-[#fdfaf6] text-gray-800 py-16 px-6">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+          {/* Photo */}
+          <div className="w-full md:w-1/2 max-w-sm">
+            <img
+              src="/images/guy-in-polo.jpg"
+              alt="Chris smiling at a piano"
+              className="rounded-xl shadow-md w-full object-cover"
+            />
+          </div>
+
+          {/* Text */}
+          <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
+            <h2 className="text-3xl font-bold">About Me</h2>
+            <p>
+              Hi, I'm Chris! I started tuning pianos because I love music,
+              craftsmanship, and helping people get the most from their
+              instruments. Whether you're a professional pianist or a hobbyist,
+              I treat every piano with the same care and attention to detail.
+            </p>
+            <p>
+              I'm currently a college student, and this small business allows me
+              to serve the community I care about while doing something I love.
+              Thanks for trusting me with your instrument!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section
+        id="pricing"
+        className="bg-white text-gray-800 py-16 px-6 border-t border-b"
+      >
+        <div className="max-w-3xl mx-auto text-center space-y-4">
+          <h2 className="text-3xl font-bold">Pricing</h2>
+          <ul className="mt-6 space-y-4 text-lg">
+            <li>
+              🎹 **Standard Tuning** –{" "}
+              <span className="font-semibold">$120</span>
+            </li>
+            <li>
+              🔧 **Pitch Raise + Tuning** –{" "}
+              <span className="font-semibold">$160</span>
+            </li>
+            <li>
+              🧰 **Minor Repairs** –{" "}
+              <span className="font-semibold">Priced on inspection</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="bg-[#fdfaf6] text-gray-800 py-16 px-6">
+        <div className="max-w-3xl mx-auto text-center space-y-4">
+          <h2 className="text-3xl font-bold">Contact</h2>
+          <p>
+            I'd love to hear from you. Reach out anytime to schedule a tuning or
+            ask a question!
+          </p>
+          <ul className="space-y-2">
+            <li>
+              <strong>Email:</strong> cmarkstaller@gmail.com
+            </li>
+            <li>
+              <strong>Phone:</strong> (503) 462-2561
+            </li>
+            <li>
+              <strong>Based in:</strong> Provo Utah
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer className="p-4 text-center text-sm text-gray-500 border-t">
+        © {new Date().getFullYear()} RockSphere by Christopher Markstaller
+      </footer>
     </div>
   );
 }
