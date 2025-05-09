@@ -18,7 +18,7 @@ export default function Home() {
       </div>
 
       {/* Fixed Header with Links */}
-      <header className="fixed top-0 left-0 w-full bg-[#5c4033]/90 text-white z-20 shadow-md">
+      <header className="fixed top-0 left-0 w-full bg-[#5c4033]/90 text-white z-20 shadow-lg">
         <nav className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-xl font-semibold">Chris's Piano Care</h1>
           <div className="space-x-4 text-sm sm:text-base">
@@ -74,37 +74,40 @@ export default function Home() {
               I treat every piano with the same care and attention to detail.
             </p>
             <p>
-              I'm currently a college student, and this small business allows me
-              to serve the community I care about while doing something I love.
-              Thanks for trusting me with your instrument!
+              I'm currently a Computer Science student at BYU, and this small
+              business lets me do something I love while supporting myself
+              through school. Thank you for trusting me with your instrument —
+              it truly means a lot!
             </p>
           </div>
         </div>
       </section>
 
+      <div className="w-full bg-[#fdfaf6] flex justify-center">
+        <div className="h-px w-[90%] max-w-5xl bg-gray-300" />
+      </div>
+
       {/* Pricing Section */}
-      <section
-        id="pricing"
-        className="bg-white text-gray-800 py-16 px-6 border-t border-b"
-      >
+      <section id="pricing" className="bg-white text-gray-800 py-16 px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <h2 className="text-3xl font-bold">Pricing</h2>
           <ul className="mt-6 space-y-4 text-lg">
             <li>
-              🎹 **Standard Tuning** –{" "}
-              <span className="font-semibold">$120</span>
+              <strong>Standard Tuning</strong> – <span>$100</span>
             </li>
             <li>
-              🔧 **Pitch Raise + Tuning** –{" "}
-              <span className="font-semibold">$160</span>
+              <strong>Pitch Raise + Tuning</strong> - <span>$150</span>
             </li>
             <li>
-              🧰 **Minor Repairs** –{" "}
-              <span className="font-semibold">Priced on inspection</span>
+              <strong>Minor Repairs</strong> - <span>Priced on inspection</span>
             </li>
           </ul>
         </div>
       </section>
+
+      <div className="w-full bg-[#fdfaf6] flex justify-center">
+        <div className="h-px w-[90%] max-w-5xl bg-gray-300" />
+      </div>
 
       {/* Contact Section */}
       <section id="contact" className="bg-[#fdfaf6] text-gray-800 py-16 px-6">
@@ -127,8 +130,9 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <footer className="p-4 text-center text-sm text-gray-500 border-t">
-        © {new Date().getFullYear()} RockSphere by Christopher Markstaller
+      <footer className="p-4 text-center text-sm bg-[#3f2a21] text-[#fdfaf6] border-t border-[#5c4033]">
+        © {new Date().getFullYear()} Chris's Piano Care — Christopher
+        Markstaller
       </footer>
     </div>
   );
