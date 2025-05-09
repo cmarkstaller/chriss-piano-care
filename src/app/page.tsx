@@ -193,7 +193,7 @@ export default function Home() {
               <strong>Phone:</strong> (503) 462-2561
             </li>
             <li>
-              <strong>Based in:</strong> Provo Utah
+              <strong>Based in:</strong> Provo, Utah
             </li>
           </ul>
         </div>
