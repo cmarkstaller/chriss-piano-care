@@ -53,7 +53,10 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-[#fdfaf6] text-gray-800 py-16 px-6">
+      <section
+        id="about"
+        className="bg-[#fdfaf6] text-gray-800 py-16 px-6 scroll-mt-24"
+      >
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Photo */}
           <div className="w-full md:w-1/2 max-w-sm">
@@ -88,7 +91,10 @@ export default function Home() {
       </div>
 
       {/* Pricing Section */}
-      <section id="pricing" className="bg-white text-gray-800 py-16 px-6">
+      <section
+        id="pricing"
+        className="bg-white text-gray-800 py-16 px-6 scroll-mt-24"
+      >
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <h2 className="text-3xl font-bold">Pricing</h2>
           <ul className="mt-6 space-y-4 text-lg">
@@ -110,7 +116,10 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-[#fdfaf6] text-gray-800 py-16 px-6">
+      <section
+        id="contact"
+        className="bg-[#fdfaf6] text-gray-800 py-16 px-6 scroll-mt-24"
+      >
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <h2 className="text-3xl font-bold">Contact</h2>
           <p>
