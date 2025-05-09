@@ -20,7 +20,7 @@ export default function Home() {
       {/* Fixed Header with Links */}
       <header className="fixed top-0 left-0 w-full bg-[#5c4033]/90 text-white z-20 shadow-lg">
         <nav className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-semibold">Chris's Piano Care</h1>
+          <h1 className="text-xl font-semibold">Chris&apos;s Piano Care</h1>
           <div className="space-x-4 text-sm sm:text-base">
             <a href="#about" className="hover:underline">
               About
@@ -71,14 +71,15 @@ export default function Home() {
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
             <h2 className="text-3xl font-bold">About Me</h2>
             <p>
-              Hi, I'm Chris! I started tuning pianos because I love music,
+              Hi, I&apos;m Chris! I started tuning pianos because I love music,
               craftsmanship, and helping people get the most from their
-              instruments. Whether you're a professional pianist or a hobbyist,
-              I treat every piano with the same care and attention to detail.
+              instruments. Whether you&apos;re a professional pianist or a
+              hobbyist, I treat every piano with the same care and attention to
+              detail.
             </p>
             <p>
-              I'm currently a Computer Science student at BYU, and this small
-              business lets me do something I love while supporting myself
+              I&apos;m currently a Computer Science student at BYU, and this
+              small business lets me do something I love while supporting myself
               through school. Thank you for trusting me with your instrument —
               it truly means a lot!
             </p>
@@ -123,8 +124,8 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <h2 className="text-3xl font-bold">Contact</h2>
           <p>
-            I'd love to hear from you. Reach out anytime to schedule a tuning or
-            ask a question!
+            I&apos;d love to hear from you. Reach out anytime to schedule a
+            tuning or ask a question!
           </p>
           <ul className="space-y-2">
             <li>
@@ -140,7 +141,7 @@ export default function Home() {
         </div>
       </section>
       <footer className="p-4 text-center text-sm bg-[#3f2a21] text-[#fdfaf6] border-t border-[#5c4033]">
-        © {new Date().getFullYear()} Chris's Piano Care — Christopher
+        © {new Date().getFullYear()} Chris&apos;s Piano Care — Christopher
         Markstaller
       </footer>
     </div>
