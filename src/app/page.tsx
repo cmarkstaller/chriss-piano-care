@@ -1,8 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="relative w-full scroll-smooth">
       {/* Background Image for Landing Section */}
@@ -20,7 +22,9 @@ export default function Home() {
       <header className="fixed top-0 left-0 w-full bg-[#5c4033]/90 text-white z-20 shadow-lg">
         <nav className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-xl font-semibold">Chris&apos;s Piano Care</h1>
-          <div className="space-x-4 text-sm sm:text-base">
+
+          {/* Desktop links */}
+          <div className="hidden sm:flex space-x-4 text-sm sm:text-base">
             <a href="#about" className="hover:underline">
               About
             </a>
@@ -31,7 +35,62 @@ export default function Home() {
               Contact
             </a>
           </div>
+
+          {/* Hamburger button on small screens */}
+          <button
+            className="sm:hidden focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle Menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={
+                  menuOpen
+                    ? "M6 18L18 6M6 6l12 12" // X icon
+                    : "M4 6h16M4 12h16M4 18h16" // Hamburger
+                }
+              />
+            </svg>
+          </button>
         </nav>
+
+        {/* Slide-down mobile menu */}
+        <div
+          className={`sm:hidden bg-[#5c4033] px-6 overflow-hidden transition-all duration-300 ease-in-out ${
+            menuOpen ? "max-h-40 py-4" : "max-h-0 py-0"
+          }`}
+        >
+          <a
+            href="#about"
+            onClick={() => setMenuOpen(false)}
+            className="block py-1 text-sm text-white hover:underline"
+          >
+            About
+          </a>
+          <a
+            href="#pricing"
+            onClick={() => setMenuOpen(false)}
+            className="block py-1 text-sm text-white hover:underline"
+          >
+            Pricing
+          </a>
+          <a
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+            className="block py-1 text-sm text-white hover:underline"
+          >
+            Contact
+          </a>
+        </div>
       </header>
 
       {/* Landing Section */}
