@@ -14,9 +14,15 @@ export default function Home() {
 
           {/* Desktop links */}
           <div className="hidden sm:flex space-x-4 text-sm sm:text-base">
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#pricing" className="hover:underline">Pricing</a>
-            <a href="#contact" className="hover:underline">Contact</a>
+            <a href="#about" className="hover:underline">
+              About
+            </a>
+            <a href="#pricing" className="hover:underline">
+              Pricing
+            </a>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
           </div>
 
           {/* Hamburger button on small screens */}
@@ -37,9 +43,7 @@ export default function Home() {
                 strokeLinejoin="round"
                 strokeWidth={2}
                 d={
-                  menuOpen
-                    ? "M6 18L18 6M6 6l12 12" // X icon
-                    : "M4 6h16M4 12h16M4 18h16" // Hamburger
+                  menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
                 }
               />
             </svg>
@@ -52,9 +56,27 @@ export default function Home() {
             menuOpen ? "max-h-40 py-4" : "max-h-0 py-0"
           }`}
         >
-          <a href="#about" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-white hover:underline">About</a>
-          <a href="#pricing" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-white hover:underline">Pricing</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-white hover:underline">Contact</a>
+          <a
+            href="#about"
+            onClick={() => setMenuOpen(false)}
+            className="block py-1 text-sm text-white hover:underline"
+          >
+            About
+          </a>
+          <a
+            href="#pricing"
+            onClick={() => setMenuOpen(false)}
+            className="block py-1 text-sm text-white hover:underline"
+          >
+            Pricing
+          </a>
+          <a
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+            className="block py-1 text-sm text-white hover:underline"
+          >
+            Contact
+          </a>
         </div>
       </header>
 
@@ -71,7 +93,8 @@ export default function Home() {
           Tuning Pianos with Precision and Heart
         </h2>
         <p className="mt-4 text-lg max-w-xl drop-shadow">
-          Serving homes in the Provo area with personalized piano care and tuning.
+          Serving homes in the Provo area with personalized piano care and
+          tuning.
         </p>
         <a
           href="#contact"
@@ -82,7 +105,10 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-[#fdfaf6] text-gray-800 py-16 px-6 scroll-mt-24">
+      <section
+        id="about"
+        className="bg-[#f3eee9] text-gray-800 py-16 px-6 scroll-mt-24"
+      >
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2 max-w-sm">
             <img
@@ -94,50 +120,79 @@ export default function Home() {
           <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
             <h2 className="text-3xl font-bold">About Me</h2>
             <p>
-              Hi, I&apos;m Chris! I started tuning pianos because I love music, craftsmanship, and helping people get the most from their instruments. Whether you&apos;re a professional pianist or a hobbyist, I treat every piano with the same care and attention to detail.
+              Hi, I&apos;m Chris! I started tuning pianos because I love music,
+              craftsmanship, and helping people get the most from their
+              instruments. Whether you&apos;re a professional pianist or a
+              hobbyist, I treat every piano with the same care and attention to
+              detail.
             </p>
             <p>
-              I&apos;m currently a Computer Science student at BYU, and this small business lets me do something I love while supporting myself through school. Thank you for trusting me with your instrument — it truly means a lot!
+              I&apos;m currently a Computer Science student at BYU, and this
+              small business lets me do something I love while supporting myself
+              through school. Thank you for trusting me with your instrument —
+              it truly means a lot!
             </p>
           </div>
         </div>
       </section>
 
-      <div className="w-full bg-[#fdfaf6] flex justify-center">
+      <div className="w-full bg-[#f3eee9] flex justify-center">
         <div className="h-px w-[90%] max-w-5xl bg-gray-300" />
       </div>
 
       {/* Pricing Section */}
-      <section id="pricing" className="bg-white text-gray-800 py-16 px-6 scroll-mt-24">
+      <section
+        id="pricing"
+        className="bg-[#f9f5f1] text-gray-800 py-16 px-6 scroll-mt-24"
+      >
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <h2 className="text-3xl font-bold">Pricing</h2>
           <ul className="mt-6 space-y-4 text-lg">
-            <li><strong>Standard Tuning</strong> – <span>$100</span></li>
-            <li><strong>Pitch Raise + Tuning</strong> - <span>$150</span></li>
-            <li><strong>Minor Repairs</strong> - <span>Priced on inspection</span></li>
+            <li>
+              <strong>Standard Tuning</strong> – <span>$100</span>
+            </li>
+            <li>
+              <strong>Pitch Raise + Tuning</strong> - <span>$150</span>
+            </li>
+            <li>
+              <strong>Minor Repairs</strong> - <span>Priced on inspection</span>
+            </li>
           </ul>
         </div>
       </section>
 
-      <div className="w-full bg-[#fdfaf6] flex justify-center">
+      <div className="w-full bg-[#f3eee9] flex justify-center">
         <div className="h-px w-[90%] max-w-5xl bg-gray-300" />
       </div>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-[#fdfaf6] text-gray-800 py-16 px-6 scroll-mt-24">
+      <section
+        id="contact"
+        className="bg-[#f3eee9] text-gray-800 py-16 px-6 scroll-mt-24"
+      >
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <h2 className="text-3xl font-bold">Contact</h2>
-          <p>I&apos;d love to hear from you. Reach out anytime to schedule a tuning or ask a question!</p>
+          <p>
+            I&apos;d love to hear from you. Reach out anytime to schedule a
+            tuning or ask a question!
+          </p>
           <ul className="space-y-2">
-            <li><strong>Email:</strong> cmarkstaller@gmail.com</li>
-            <li><strong>Phone:</strong> (503) 462-2561</li>
-            <li><strong>Based in:</strong> Provo, Utah</li>
+            <li>
+              <strong>Email:</strong> cmarkstaller@gmail.com
+            </li>
+            <li>
+              <strong>Phone:</strong> (503) 462-2561
+            </li>
+            <li>
+              <strong>Based in:</strong> Provo, Utah
+            </li>
           </ul>
         </div>
       </section>
 
       <footer className="p-4 text-center text-sm bg-[#3f2a21] text-[#fdfaf6] border-t border-[#5c4033]">
-        © {new Date().getFullYear()} Chris&apos;s Piano Care — Christopher Markstaller
+        © {new Date().getFullYear()} Chris&apos;s Piano Care — Christopher
+        Markstaller
       </footer>
     </div>
   );
