@@ -152,7 +152,7 @@ export default function Home() {
               <strong>Standard Tuning</strong> – <span>$100</span>
             </li>
             <li>
-              <strong>Pitch Raise + Tuning</strong> - <span>$150</span>
+              <strong>Pitch Raise + Tuning</strong> - <span>$140</span>
             </li>
             <li>
               <strong>Minor Repairs</strong> - <span>Priced on inspection</span>
