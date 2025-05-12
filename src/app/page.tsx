@@ -7,7 +7,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="relative w-full scroll-smooth">
-      {/* Fixed Header with Links */}
+      {/* Header with Links */}
       <header className="fixed top-0 left-0 w-full bg-[#5c4033]/90 text-white z-20 shadow-lg">
         <nav className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-xl font-semibold">Chris&apos;s Piano Care</h1>
@@ -86,7 +86,7 @@ export default function Home() {
           src="/images/chris-tuning-piano.jpg"
           alt="Chris tuning a piano"
           fill
-          className="object-cover object-top brightness-30 -z-10"
+          className="object-cover object-top brightness-50 -z-10"
           priority
         />
         <h2 className="text-4xl font-bold drop-shadow-md">
